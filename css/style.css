@@ -65,6 +65,29 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*временно*/
+
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/*временно*/
 
 
 .main-header {
@@ -79,8 +102,10 @@ img {
   width: 1035px;
 
   color: #393d3c;
+
   background-image: url("../img/header-bg.png");
   background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .main-header .main-header-right {
@@ -98,8 +123,15 @@ img {
 }
 
 .studio-label {
+  width: 162px;
+
   font-size: 18px;
   line-height: 18px;
+}
+
+.main-header .studio-label {
+
+  outline: 1px solid red
 }
 
 .socials-list {
@@ -113,7 +145,11 @@ img {
 }
 
 .projects-layout-left {
+  display: flex;
+  flex-wrap: wrap;
+
   width: 1035px;
+
 }
 
 .projects-layout-right {
@@ -121,9 +157,12 @@ img {
 }
 
 .projects-header {
+  width: 465px;
+  min-height: 500px;
+
   font-size: 13px;
   line-height: 14px;
-  
+
   color: #ffffff;
   background-color: #ebb240;
 }
@@ -169,8 +208,57 @@ img {
   color: #333333;
 }
 
+.project--fondue {
+  width: 570px;
+  min-height: 500px;
+
+  outline: 1px solid black;
+}
+
+.project--louis {
+  width: 300px;
+  min-height: 465px;
+}
+
+.project--p22 {
+  width: 735px;
+  min-height: 465px;
+
+  outline: 1px solid red;
+}
+
+.project--sesann {
+  width: 735px;
+  min-height: 300px;
+}
+
+.project--alessi {
+  width: 300px;
+  min-height: 300px;
+
+  outline: 1px solid red;
+}
+
+.project--potter {
+  min-height: 250px;
+}
+
+.project--tabano {
+  min-height: 465px;
+
+  outline: 1px solid blue;
+}
+
+.project--fiji {
+  min-height: 250px;
+
+  outline: 1px solid green;
+}
+
 
 .projects-footer {
+  min-height: 300px;
+
   background-color: #ebb240;
 }
 
@@ -187,19 +275,45 @@ img {
 
 
 .studio {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #e9eae2;
 }
 
-.studio .studio-title {
+.studio-header {
+  width: 465px;
+  height: 500px;
+
+  background-color: #ff9b6d;
+}
+
+.studio-title {
+
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
 
   color: #fefefe;
-  background-color: #ff9b6d;
+
 }
 
+.studio-layout {
+  display: flex;
+
+  width: 1035px;
+  min-height: 500px;
+
+  padding-top: 95px;
+  padding-left: 115px;
+  padding-right: 170px;
+}
+
+
+
 .studio .about {
+  padding-right: 40px;
+  width: 390px;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 300;
@@ -212,17 +326,25 @@ img {
   font-style: italic;
 }
 
-
-
-.awards {}
+.studio .awards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding-top: 245px;
+  width: 360px;
+}
 
 .awards .awards-title {
+  width: 360px;
+
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
 }
 
 .awards .awards-text {
+  width: 150px;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
@@ -235,13 +357,23 @@ img {
   line-height: 18px;
 }
 
-.staff .staff-about {}
+.staff-layout {
+  display: flex;
+}
 
-.staff .staff-title {}
+.staff-about {
+  width: 465px;
+  ;
+}
 
-.staff .staff-text {}
+.staff-title {}
 
-.staff-person {}
+.staff-text {}
+
+.staff-person {
+  padding-right: 30px;
+  width: 273px;
+}
 
 .staff-person .person-image {}
 
@@ -272,22 +404,39 @@ img {
 
 
 
-.news {}
+.news {
+  display: flex;
+}
 
-.news .news-title {
+.news-header {
+  width: 465px;
+  min-height: 500px;
+  background-color: #d4edbf;
+}
+
+.news-title {
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
 
   color: #fefefe;
-  background-color: #d4edbf;
+
 }
 
-.news .news-content {}
+.news-content {
+  display: flex;
+  padding-top: 80px;
+  padding-left: 100px;
+}
 
-.news .article {}
+.news .article {
+  margin-right: 30px;
+  width: 370px;
+}
 
 .news .article-header {
+  margin-top: 0;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -313,14 +462,33 @@ img {
   text-decoration: none;
 }
 
+.main-footer {
+  display: flex;
+}
 
+.main-footer .map {}
 
-.main-footer-information {
+.main-footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 115px;
+  padding-top: 150px;
+}
+
+.main-footer .information {
+  width: 300px;
+
   font-size: 13px;
   line-height: 14px;
 }
 
-.main-footer-copyright {
+.main-footer .studio-label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+.main-footer .copyright {
   font-size: 12px;
   line-height: 22px;
   text-transform: none;
