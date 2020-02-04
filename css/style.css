@@ -91,17 +91,15 @@ input[type="radio"].visually-hidden {
 
 
 
-/*--------------------------
-------  БЭМ-блоки ----------
---------------------------*/
+/*------------------------------
+------  независимые блоки ------
+------------------------------*/
 
 .studio-label {
   width: 162px;
 
   font-size: 18px;
   line-height: 18px;
-
-  outline: 1px solid red
 }
 
 .studio-label .logo {
@@ -175,7 +173,6 @@ input[type="radio"].visually-hidden {
 
 
 .main-header {
-
   display: flex;
 
   min-height: 500px;
@@ -191,10 +188,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/header-bg.png");
   background-position: top right;
   background-repeat: no-repeat;
-}
-
-.main-header .studio-label {
-  outline: 1px solid red
 }
 
 .main-header .adress {
@@ -411,7 +404,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   width: 1035px;
-
 }
 
 .projects-layout-right {
@@ -929,13 +921,27 @@ input[type="radio"].visually-hidden {
   line-height: 14px;
 }
 
+.information a {
+  color: inherit;
+}
+
+.main-footer .adress {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.main-footer .contacts {
+  margin: 0;
+}
+
 .main-footer .studio-label {
   font-size: 18px;
   line-height: 18px;
 }
 
-
 .main-footer .copyright {
+  margin: 0;
+
   font-size: 12px;
   line-height: 22px;
   text-transform: none;
