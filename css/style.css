@@ -518,6 +518,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   margin-bottom: 15px;
+  margin-left: 35px;
 
   font-size: 18px;
   line-height: 18px;
@@ -570,50 +571,230 @@ input[type="radio"].visually-hidden {
 
 
 .project--fondue {
+  padding-top: 85px;
+  padding-left: 100px;
   width: 570px;
   min-height: 500px;
 
-  outline: 1px solid black;
+  background-image: url("../img/project-fondue.jpg");
+  background-position: 230px center;
+  background-size: contain;
+  background-color: #fff;
+  background-repeat: no-repeat;
 }
+
+.project--fondue .project-information {
+  margin-bottom: 70px;
+}
+
+.project--fondue .view-link {
+  margin-bottom: 110px;
+}
+
+.project--fondue .like {
+  margin-left: 60px;
+}
+
 
 .project--louis {
   width: 300px;
   min-height: 465px;
+
+  color: #ffffff;
+
+  background-image: url("../img/project-louis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.project--louis .project-information {
+  margin-bottom: 35px;
+
+  color: #fefefe;
+}
+
+.project--louis .view-link {
+  margin-left: 27px;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+}
+
+.project--louis .like {
+  margin-left: 60px;
+}
+
+.project--louis .like-btn {
+  background-image: url("../img/icons/heart-white.svg");
+}
+
+.project--louis .like-count {
+  color: #fe7c7c;
+}
+
+
 .project--p22 {
+  position: relative;
+
+  padding-top: 90px;
+  padding-left: 360px;
   width: 735px;
   min-height: 465px;
 
-  outline: 1px solid red;
+  background-image: url("../img/project-p22.jpg");
+  background-repeat: no-repeat;
 }
+
+.project--p22 .view-link {
+  position: absolute;
+  top: 95px;
+  right: 65px;
+}
+
+.project--p22 .like {
+  position: absolute;
+
+  top: 135px;
+  right: 110px;
+}
+
 
 .project--sesann {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  padding-top: 200px;
+  padding-left: 150px;
+
   width: 735px;
   min-height: 300px;
+
+  background-image: url("../img/project-sesann.jpg");
+  background-repeat: no-repeat;
 }
 
+.project--sesann .project-name {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.project--sesann .project-information {
+  margin-right: 40px;
+  width: 200px;
+}
+
+.project--sesann .view-link {
+  margin-left: 0;
+  width: 150px;
+}
+
+
 .project--alessi {
+  padding: 0;
+  padding-top: 80px;
+  padding-left: 160px;
   width: 300px;
   min-height: 300px;
 
-  outline: 1px solid red;
+  background-image: url("../img/project-alessi.jpg");
+  background-repeat: no-repeat;
 }
+
+.project--alessi .project-information {
+  margin-bottom: 30px;
+}
+
+.project--alessi .view-link {
+  margin-left: -5px;
+  margin-bottom: 30px;
+}
+
+.project--alessi .like {
+  margin-left: 30px;
+}
+
 
 .project--potter {
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 43px;
+
   min-height: 250px;
+
+  background-image: url("../img/project-potter.jpg");
+  background-repeat: no-repeat;
 }
+
+.project--potter .project-information {
+  margin-bottom: 0;
+}
+
+.project--potter .project-description {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 150px;
+
+  text-transform: none;
+}
+
+.project--potter .view-link {
+  margin-left: 27px;
+  margin-bottom: 25px;
+}
+
+.project--potter .like {
+  margin-left: 55px;
+}
+
 
 .project--tabano {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  padding-top: 340px;
+  padding-left: 60px;
+  width: 465px;
   min-height: 465px;
 
-  outline: 1px solid blue;
+  background-image: url("../img/project-tabano.jpg");
+  background-repeat: no-repeat;
 }
 
+.project--tabano .project-name {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.project--tabano .project-information {
+  width: 170px;
+}
+
+.project--tabano .view-link {
+  width: 120px;
+}
+
+
 .project--fiji {
+  padding: 0;
+  padding-top: 45px;
+  padding-left: 245px;
   min-height: 250px;
 
-  outline: 1px solid green;
+  background-image: url("../img/project-fiji.jpg");
+}
+
+.project--fiji .project-information {
+  margin-bottom: 25px;
+}
+
+.project--fiji .view-link {
+  margin-bottom: 25px;
+}
+
+.project--fiji .like {
+  margin-left: 65px;
 }
 
 
