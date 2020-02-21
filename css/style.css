@@ -237,9 +237,8 @@ input[type="radio"].visually-hidden {
 
 
 /* closed ~start */
-/*
 
-.main-navigation {
+.main-navigation--closed {
   position: absolute;
 
   top: 50px;
@@ -249,10 +248,12 @@ input[type="radio"].visually-hidden {
   height: 120px;
 
   border: 3px solid #ffffff;
+  
+  cursor: pointer;
 }
 
 
-.main-navigation .list {
+.main-navigation--closed .list {
   display: none;
 
   margin: 0;
@@ -262,7 +263,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.main-navigation .close-button {
+.main-navigation--closed .menu-button {
   content: "";
   position: absolute;
 
@@ -278,12 +279,12 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   background-color: transparent;
-
+  
   cursor: pointer;
 }
 
-.main-navigation .close-button::before,
-.main-navigation .close-button::after {
+.main-navigation--closed .menu-button::before,
+.main-navigation--closed .menu-button::after {
   content: "";
   position: absolute;
 
@@ -296,26 +297,24 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.main-navigation .close-button::before {
+.main-navigation--closed .menu-button::before {
   margin-top: -9px;
   margin-left: -20px;
 
   box-shadow: 0 7px 0 0 #ffffff
 }
 
-.main-navigation .close-button::after {
+.main-navigation--closed .menu-button::after {
   margin-top: 5px;
   margin-left: -20px;
 }
-*/
 
 /* closed ~end */
 
 
-
 /* opened ~start */
 
-.main-navigation {
+.main-navigation--opened {
   position: absolute;
 
   top: 50px;
@@ -332,7 +331,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8c255;
 }
 
-.main-navigation .list {
+.main-navigation--opened .list {
   display: flex;
   margin: 0;
   padding: 50px;
@@ -341,11 +340,11 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.main-navigation .item {
+.main-navigation--opened .item {
   margin-right: 65px;
 }
 
-.main-navigation .close-button {
+.main-navigation--opened .menu-button {
   content: "";
   position: absolute;
 
@@ -364,8 +363,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.main-navigation .close-button::before,
-.main-navigation .close-button::after {
+.main-navigation--opened .menu-button::before,
+.main-navigation--opened .menu-button::after {
   content: "";
   position: absolute;
 
@@ -375,7 +374,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.main-navigation .close-button::before {
+.main-navigation--opened .menu-button::before {
   top: 50%;
   left: 50%;
 
@@ -385,7 +384,7 @@ input[type="radio"].visually-hidden {
   transform: rotate(50deg);
 }
 
-.main-navigation .close-button::after {
+.main-navigation--opened .menu-button::after {
   top: 50%;
   left: 50%;
 
