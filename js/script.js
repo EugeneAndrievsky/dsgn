@@ -6,6 +6,11 @@ var project = projects.querySelector('.project--single');
 var close = project.querySelector('.close-button');
 var projectsLinks = projects.querySelectorAll('.view-link');
 
+var projectsHeaderNav = projects.querySelector('.projects-header .navigation');
+var projectsFooterNav = projects.querySelector('.projects-footer .navigation');
+
+
+
 // открываем меню, нажимая на закрытое меню
 menu.addEventListener('click', function (e) {
   menu.classList.remove('main-navigation--closed');
@@ -61,3 +66,56 @@ window.addEventListener('keydown', function (e) {
 
 
 
+/*
+1. вешаем слушатель на навигацию(одну и вторую)
+2. если клик был на ссылке, то
+2.1 удаляем все классы 'current' из ссылок этой навигации
+2.2 добавляем ссылке, на которой был клик, класс 'current'
+
+function clearLinks(nav) {
+  var links = nav.querySelectorAll('.navigation-link');
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.remove('current');
+  }
+}
+
+projectsHeaderNav.addEventListener('click', function (e) {
+  if (e.target.classList.contains('navigation-link')) {
+    e.preventDefault();
+    clearLinks(projectsHeaderNav);
+    e.target.classList.add('current');
+  }
+});
+
+projectsFooterNav.addEventListener('click', function (e) {
+  if (e.target.classList.contains('navigation-link')) {
+    e.preventDefault();
+    clearLinks(projectsFooterNav);
+    e.target.classList.add('current');
+  }
+});
+*/
+
+function clearLinks(nav) {
+  var links = nav.querySelectorAll('.navigation-link');
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.remove('current');
+  }
+}
+
+function linksHandler(e, nav) {
+  var targetLink = e.target;
+  if (targetLink.classList.contains('navigation-link')) {
+    e.preventDefault();
+    clearLinks(nav);
+    targetLink.classList.add('current');
+  }
+}
+
+projectsHeaderNav.addEventListener('click', function (e) {
+  linksHandler(e, this); // 'this' is 'projectsHeaderNav'
+});
+
+projectsFooterNav.addEventListener('click', function (e) {
+  linksHandler(e, this); // 'this' is 'projectsFooterNav'
+});

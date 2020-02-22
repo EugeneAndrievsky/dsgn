@@ -474,7 +474,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.projects-header .navigation-link:hover::before,
 .projects .current::before {
   content: "";
   position: absolute;
@@ -1021,19 +1020,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   color: #000000;
-}
-
-.projects-footer .navigation-link:hover::before {
-  content: "";
-  position: absolute;
-
-  left: -30px;
-
-  width: 20px;
-  height: 15px;
-
-  background-image: url("../img/icons/arrow-white.svg");
-  background-repeat: no-repeat;
 }
 
 
