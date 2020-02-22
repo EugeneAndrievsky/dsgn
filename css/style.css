@@ -116,15 +116,17 @@ input[type="radio"].visually-hidden {
   width: 100px;
 }
 
+
 .socials-list {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 162px;
 
   font-size: 0;
+  line-height: 0;
   list-style: none;
 }
 
@@ -136,40 +138,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.socials-link--facebook {
-  width: 10px;
-  height: 22px;
-
-  background-image: url("../img/icons/facebook.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.socials-link--twitter {
-  width: 26px;
-  height: 21px;
-
-  background-image: url("../img/icons/twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.socials-link--linkedin {
-  width: 24px;
-  height: 23px;
-
-  background-image: url("../img/icons/linkedin.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.socials-link--google {
-  width: 19px;
-  height: 19px;
-
-  background-image: url("../img/icons/google.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 /************************************/
@@ -704,29 +672,13 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin: 0 auto;
   width: 162px;
+
+  font-size: 0;
+  line-height: 0;
 }
 
 .project--single .socials-item {
   margin: 0;
-}
-
-.project--single .socials-link {
-  background-image: none;
-}
-
-.project--single .socials-link path {
-  fill: #333333;
-}
-
-.project--single .socials-link--facebook {}
-
-.project--single .socials-link--twitter {}
-
-.project--single .socials-link--google {}
-
-.project--single .socials-link--gmail {
-  width: 26px;
-  height: 20px;
 }
 
 .project--single .close-button {
@@ -1231,6 +1183,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.person-links .socials-list {
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .person-cv {
@@ -1257,37 +1217,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.person-links .socials-list {
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.person-links .socials-link--facebook {
-  width: 7px;
-  height: 13px;
-
-  background-image: url("../img/icons/facebook-orange.svg");
-}
-
-.person-links .socials-link--twitter {
-  width: 13px;
-  height: 10px;
-
-  background-image: url("../img/icons/twitter-orange.svg");
-}
-
-.person-links .socials-link--linkedin {
-  width: 12px;
-  height: 12px;
-
-  background-image: url("../img/icons/linkedin-orange.svg");
-}
-
-.person-links .socials-link--google {
-  width: 18px;
-  height: 12px;
-
-  background-image: url("../img/icons/google-orange.svg");
 }
 
 
