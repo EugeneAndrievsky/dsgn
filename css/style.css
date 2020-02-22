@@ -467,13 +467,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.projects-header .navigation-link:hover {
+.projects-header .navigation-link:hover,
+.projects .current {
   position: relative;
 
   color: #000000;
 }
 
-.projects-header .navigation-link:hover::before {
+.projects-header .navigation-link:hover::before,
+.projects .current::before {
   content: "";
   position: absolute;
 
@@ -740,6 +742,8 @@ input[type="radio"].visually-hidden {
 
   border: 1px solid #131313;
   background-color: #fff;
+  
+  cursor: pointer;
 }
 
 .project--single .close-button::before,
@@ -751,8 +755,6 @@ input[type="radio"].visually-hidden {
   height: 1px;
 
   background-color: #131313;
-
-  cursor: pointer;
 }
 
 .project--single .close-button::before {
@@ -761,6 +763,10 @@ input[type="radio"].visually-hidden {
 
 .project--single .close-button::after {
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hide-project {
+  display: none;
 }
 
 
