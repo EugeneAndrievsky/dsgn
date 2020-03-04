@@ -13,8 +13,7 @@ var projectsFooterNav = projects.querySelector('.projects-footer .navigation');
 
 // открываем меню, нажимая на закрытое меню
 menu.addEventListener('click', function (e) {
-  menu.classList.remove('main-navigation--closed');
-  menu.classList.add('main-navigation--opened');
+  menu.classList.replace('main-navigation--closed', 'main-navigation--opened');
 });
 
 // открываем/закрываем меню, нажимая на кнопку
@@ -111,6 +110,17 @@ function linksHandler(e, nav) {
     targetLink.classList.add('current');
   }
 }
+
+/*
+function setHandler (element) {
+  element.addEventListener('click', function(e) {
+    linksHandler(e, this);
+  })
+}
+
+setHandler(projectsHeaderNav);
+setHandler(projectsFooterNav);
+*/
 
 projectsHeaderNav.addEventListener('click', function (e) {
   linksHandler(e, this); // 'this' is 'projectsHeaderNav'
